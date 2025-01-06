@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - sudo apt update
+      - sudo apt install nginx -y
+      - echo Installing dependencies
+  build:
+    commands:
+      - echo Building web app
+      - cp index.html /var/www/html
